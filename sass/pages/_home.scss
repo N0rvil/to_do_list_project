@@ -1,0 +1,13 @@
+.header {
+    margin: 4rem;
+}
+.list {
+    margin: 2rem;
+    margin-left: -9rem;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    &__section {
+        list-style-type: none;
+    }
+}

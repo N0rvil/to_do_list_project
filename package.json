@@ -1,0 +1,27 @@
+{
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "description": "to do list app",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Filip Duda",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {
+    "all": "0.0.0",
+    "jquery": "^3.5.1",
+    "postcss": "^7.0.32"
+  }
+}
