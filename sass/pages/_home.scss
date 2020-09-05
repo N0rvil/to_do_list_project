@@ -3,11 +3,19 @@
 }
 .list {
     margin: 2rem;
-    margin-left: -9rem;
     display: flex;
     justify-content: space-around;
+    justify-items: center;
     list-style-type: none;
+    position: relative;
+    width: auto;
     &__section {
         list-style-type: none;
     }
+}
+.add {
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

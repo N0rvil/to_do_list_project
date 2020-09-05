@@ -3,26 +3,42 @@
     display: flex;
     align-content: center;
     align-items: center;
-    &-text {
-        margin-right: 2rem;
+    border: solid $color-black 2px;
+    border-radius: .5rem;
+    width: 30rem;
+    position: relative;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-top: .2rem;
+
+    
+    &:not(:last-child) {
+        margin-bottom: 2rem;
     }
-    &-btn {
-        height: 4rem;
-        width: 4rem;
-        font-size: 3rem;
-        background-color: Transparent;
-        background-repeat:no-repeat;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        &:hover {
-            color: $color-red;
-            .list__card-icon {
-                transform: scale(1.3);
-            }
-        }
-    }
-    &-icon {
-        margin-top: -.25rem;
+
+
+    &-checkbox {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: 30%;
+        right: 1rem;
     }
 }
+
+.list__card--done {
+    color: $color-text-2;
+    border: solid 2px $color-text-2;
+    text-decoration: line-through;
+    background-color: $color-green-2;
+}
+
+.list__card--red {
+    background-color: $color-red-2;
+}
+
+
+.list__card--green {
+    background-color: $color-green-1;
+}
+

@@ -1,0 +1,21 @@
+.add__btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-left: 2rem;
+    background-color:$color-black;
+    color: $color-white;
+    font-size: 2.2rem;
+    height: 4rem;
+    width: 20rem;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+    outline: none;
+    transition: all .2s;
+    font-family: inherit;
+    &:hover {
+        transform: scale(1.05);
+        color: $color-red-2;
+    }
+}
